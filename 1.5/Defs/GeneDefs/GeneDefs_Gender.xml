@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GeneDef Name="GeneForcedGenderBase" Abstract="True">
+    <geneClass>ForcedGenderGenes.Gene_ForcedGender</geneClass>
+    <biostatCpx>1</biostatCpx>
+    <displayCategory>Reproduction</displayCategory>
+    <exclusionTags>
+      <li>ForcedGender</li>
+    </exclusionTags>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneForcedGenderBase">
+    <defName>FemaleOnly</defName>
+    <label>female only</label>
+    <description>Carriers of this gene are always female.</description>
+    <iconPath>UI/Icons/Genes/Gene_FemaleOnly</iconPath>
+    <symbolPack>
+      <wholeNameSymbols>
+        <li><symbol>female</symbol></li>
+        <li><symbol>woman</symbol></li>
+        <li><symbol>lady</symbol></li>
+      </wholeNameSymbols>
+      <prefixSymbols>
+        <li><symbol>she</symbol></li>
+        <li><symbol>gyno</symbol></li>
+        <li><symbol>sis</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>woman</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+  
+  <GeneDef ParentName="GeneForcedGenderBase">
+    <defName>MaleOnly</defName>
+    <label>male only</label>
+    <description>Carriers of this gene are always male.</description>
+    <iconPath>UI/Icons/Genes/Gene_MaleOnly</iconPath>
+    <symbolPack>
+      <wholeNameSymbols>
+        <li><symbol>male</symbol></li>
+        <li><symbol>man</symbol></li>
+        <li><symbol>gentleman</symbol></li>
+      </wholeNameSymbols>
+      <prefixSymbols>
+        <li><symbol>he</symbol></li>
+        <li><symbol>andro</symbol></li>
+        <li><symbol>bro</symbol></li>
+      </prefixSymbols>
+      <suffixSymbols>
+        <li><symbol>man</symbol></li>
+      </suffixSymbols>
+    </symbolPack>
+  </GeneDef>
+	
+</Defs>
